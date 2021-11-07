@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appletlab.freshyjobs.About">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/appbar">
+
+        <RelativeLayout
+            android:id="@+id/appbar_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/appbar_default"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/app_name"
+        android:textSize="18dp"
+        android:textColor="@color/deepgray2"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_below="@+id/appname"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="2dp"
+        android:text="@string/appversion"
+        android:textSize="12dp"
+        android:textColor="@color/deepgray2"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/appabout"
+        android:layout_below="@+id/version"
+        android:text="@string/aboutapp"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/deepgray"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/socialbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
+
+
+
+        <ImageButton
+            android:id="@+id/telegram"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/facebook"
+            android:background="@drawable/telegram"
+            android:layout_centerInParent="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+
+        <ImageButton
+            android:id="@+id/facebook"
+            android:background="@drawable/facebook"
+            android:layout_centerInParent="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <ImageButton
+            android:id="@+id/instagram"
+            android:background="@drawable/instagram"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/facebook"
+            android:layout_centerInParent="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

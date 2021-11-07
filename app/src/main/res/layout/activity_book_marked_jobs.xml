@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appletlab.freshyjobs.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/appbar">
+
+        <RelativeLayout
+            android:id="@+id/appbar_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/appbar_default"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_below="@id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
+
+
+    <ImageButton
+        android:id="@+id/bookmark_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/bookmark_removed"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        app:elevation="6dp"
+        android:background="@color/white"
+        app:pressedTranslationZ="20dp"/>
+
+</RelativeLayout>

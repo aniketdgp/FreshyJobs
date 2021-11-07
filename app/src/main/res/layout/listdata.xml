@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <LinearLayout
+        android:id="@+id/unique_job_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:padding="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/companyname"
+                android:text="NVIDIA"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_500"
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/jobprofile"
+                android:layout_below="@+id/companyname"
+                android:text="Intern-Corporate Communication"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:textColor="@color/deepgray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/joblocation"
+                android:layout_below="@+id/jobprofile"
+                android:text="Kolkata"
+                android:textSize="12dp"
+                android:textStyle="normal"
+                android:textColor="@color/deepgray2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/ctc"
+                android:layout_below="@+id/joblocation"
+                android:text="4.18 LPA"
+                android:textSize="11dp"
+                android:textStyle="normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

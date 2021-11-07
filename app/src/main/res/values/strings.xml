@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">Freshy Jobs</string>
+    <string name="sample_jd">
+        All you need is...
+         *Recent graduates and/or equivalent experience.
+         *Experience with ticket-handling system is an advantage.
+         *Documentation skills, excellent verbal and written communication skills.
+         *Experience in using MS Office and end-user applications.
+         *Technical experience in related field; preference for computer sciences.
+         *Bachelors degree or equivalent experience.
+         *Preference for computer sciences, technical diploma (India), or technical degree.
+    </string>
+
+    <string name="apiurl">https://raw.githubusercontent.com/freshyjobs/AppData/main/jobs.json</string>
+
+    <string name="aboutapp">Find and apply for IT/Software Jobs. Through our daily updated list of available jobs.
+    </string>
+    <string name="appversion">v2.0</string>
+    <string name="privacypolicyheader">Privacy Policy</string>
+
+
+    <string name="privacy_policy_lastmodified">
+        Last modification date: 6th June, 2021
+    </string>
+
+    <string name="privacy_policy_content">
+
+        Applet Labs built the Freshy Jobs app as a Free app. This SERVICE is provided by Applet Labs at no cost and is intended for use as is.
+
+This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
+
+If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.
+
+The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Freshy Jobs unless otherwise defined in this Privacy Policy.
+
+
+    </string>
+
+    <string name="privacy_policy_content2">
+
+        For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information. The information that we request will be retained by us and used as described in this privacy policy.
+
+The app does use third party services that may collect information used to identify you.
+
+Link to privacy policy of third party service providers used by the app
+
+Google Analytics for Firebase
+Firebase Crashlytics
+
+    </string>
+
+
+    <string name="privacy_policy_content3">
+
+        We want to inform you that whenever you use our Service, in a case of an error in the app we collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.
+
+    </string>
+
+
+    <string name="privacy_policy_content4">
+
+        We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it.
+
+    </string>
+
+    <string name="privacy_policy_content5">
+
+        This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+
+    </string>
+
+    <string name="privacy_policy_content6">
+
+       If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at freshyjobs@gmail.com.
+    </string>
+
+
+    <string name="disclaimer">
+        Disclaimer
+    </string>
+
+    <string name="disclaimer_content">
+        FrshyJobs operates FreshyJobs ("App").
+        This page contains important information regarding the terms and conditions which apply when you access our website and/or app. Please note that the information contained herein is subject to change without notice.
+    </string>
+
+
+    <string name="disclaimer_content2">
+        By accessing the App FreshyJobs, you are agreeing to be bound by these terms of service, all applicable laws
+        and regulations, and agree that you are responsible for compliance with any applicable local laws.
+        If you do not agree with any of these terms, you are prohibited our app.
+    </string>
+
+
+    <string name="disclaimer_content3">
+
+        Permission is granted to temporarily download one copy of the materials (information or software) on the Site for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+
+    1. Modify or copy the materials;
+    2. Use the materials for any commercial purpose, or for any public display (commercial or non-commercial);
+    3. Attempt to decompile or reverse engineer any software contained on FreshyJobs.
+    4. Remove any copyright or other proprietary notations from the materials; or transfer the materials to another person or "mirror" the materials on any other server.
+
+    This license shall automatically terminate if you violate any of these restrictions and may be terminated by FreshyJobs at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.
+
+    </string>
+
+    <string name="disclaimer_content4">
+
+        The materials on the App are provided on an "as is" basis.
+        FreshyJobs makes no warranties, expressed or implied, and hereby
+        disclaims and negates all other warranties including, without limitation,
+        implied warranties or conditions of merchantability,
+        fitness for a particular purpose, or non-infringement of intellectual property
+        or other violation of rights.
+
+        Further, FreshyJobs does not warrant or make any representations concerning the accuracy,
+        likely results, or reliability of the use of the materials on its App or otherwise
+        relating to such materials or on any sites linked to this App.
+
+    </string>
+
+
+    <string name="disclaimer_content5">
+
+        None of the news are hosted on the app.These News are available on the public domain by
+        their respective owners. All news are copyrights of their owners. These news are not endorsed
+        by any of their owners, and the news are used purely and only for helping purposes.
+        No copyright violation and infringement are intended, and any request to remove
+        one of the news will be honored. If any news provider and their perspective owner
+        want us to remove it please contact us to solve the issue.
+
+    </string>
+
+
+
+
+
+</resources>

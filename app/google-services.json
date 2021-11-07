@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "668701723926",
+    "project_id": "freshy-jobs-1bfde",
+    "storage_bucket": "freshy-jobs-1bfde.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668701723926:android:c309498838eda2c0c19437",
+        "android_client_info": {
+          "package_name": "com.freshyjobs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668701723926-c1ta2a139mibl1j0f383fep9a013d5pt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKdU7DmsEvZoUK3_ypfMKieVFVXvyV0fw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668701723926-c1ta2a139mibl1j0f383fep9a013d5pt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

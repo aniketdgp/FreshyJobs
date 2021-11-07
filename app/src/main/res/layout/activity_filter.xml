@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appletlab.freshyjobs.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/appbar">
+
+        <RelativeLayout
+            android:id="@+id/appbar_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/appbar_default"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv_searchbar"
+        android:layout_below="@+id/appbar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:padding="5dp"
+            android:background="#f3e5f5"
+            android:text=""/>
+
+        <ImageButton
+            android:id="@+id/ad_search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/search"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_below="@+id/rv_searchbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/IT_software"
+                android:text="IT / Software"
+                android:background="@drawable/filter_button"
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:minHeight="1dp"
+                android:minWidth="1dp"
+                android:paddingRight="0dp"
+                android:paddingLeft="0dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/mechanical"
+                android:text="Mechanical"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:paddingRight="0dp"
+                android:paddingLeft="0dp"
+                android:minHeight="1dp"
+                android:minWidth="1dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:background="@drawable/filter_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/civil"
+                android:text="Civil"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:paddingRight="0dp"
+                android:paddingLeft="0dp"
+                android:minHeight="1dp"
+                android:minWidth="1dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:background="@drawable/filter_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_below="@+id/ll1"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/electronics"
+                android:text="Electronics"
+                android:background="@drawable/filter_button"
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:paddingRight="0dp"
+                android:paddingLeft="0dp"
+                android:minHeight="1dp"
+                android:minWidth="1dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/goverment"
+                android:text="Goverment Jobs"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:paddingRight="0dp"
+                android:paddingLeft="0dp"
+                android:minHeight="1dp"
+                android:minWidth="1dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:background="@drawable/filter_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/internships"
+                android:text="Internships"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:paddingRight="0dp"
+                android:paddingLeft="0dp"
+                android:minHeight="1dp"
+                android:minWidth="1dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:background="@drawable/filter_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_below="@+id/ll2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+                <Button
+                    android:id="@+id/accounting"
+                    android:text="Accounting"
+                    android:background="@drawable/filter_button"
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:paddingRight="0dp"
+                    android:paddingLeft="0dp"
+                    android:minHeight="1dp"
+                    android:minWidth="1dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/finanace"
+                    android:text="Finance"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp"
+                    android:paddingRight="0dp"
+                    android:paddingLeft="0dp"
+                    android:minHeight="1dp"
+                    android:minWidth="1dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:background="@drawable/filter_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/law"
+                    android:text="Law"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp"
+                    android:paddingRight="0dp"
+                    android:paddingLeft="0dp"
+                    android:minHeight="1dp"
+                    android:minWidth="1dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:background="@drawable/filter_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_below="@+id/ll3"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+                <Button
+                    android:id="@+id/healthcare"
+                    android:text="Health Care"
+                    android:background="@drawable/filter_button"
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:paddingRight="0dp"
+                    android:paddingLeft="0dp"
+                    android:minHeight="1dp"
+                    android:minWidth="1dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/marketing"
+                    android:text="Marketing"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp"
+                    android:paddingRight="0dp"
+                    android:paddingLeft="0dp"
+                    android:minHeight="1dp"
+                    android:minWidth="1dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:background="@drawable/filter_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/hr"
+                    android:text="HR"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp"
+                    android:paddingRight="0dp"
+                    android:paddingLeft="0dp"
+                    android:minHeight="1dp"
+                    android:minWidth="1dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:background="@drawable/filter_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll5"
+                android:layout_below="@+id/ll4"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+                <Button
+                    android:id="@+id/creativeart"
+                    android:text="Creative Art"
+                    android:background="@drawable/filter_button"
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:paddingRight="0dp"
+                    android:paddingLeft="0dp"
+                    android:minHeight="1dp"
+                    android:minWidth="1dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/charity"
+                    android:text="Charity"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp"
+                    android:paddingRight="0dp"
+                    android:paddingLeft="0dp"
+                    android:minHeight="1dp"
+                    android:minWidth="1dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:background="@drawable/filter_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/media"
+                    android:text="Media"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp"
+                    android:paddingRight="0dp"
+                    android:paddingLeft="0dp"
+                    android:minHeight="1dp"
+                    android:minWidth="1dp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:background="@drawable/filter_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

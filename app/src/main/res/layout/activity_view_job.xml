@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.freshyjobs.ViewJob">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/appbar">
+
+            <RelativeLayout
+                android:id="@+id/appbar_custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/appbar_viewjob"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/vj_job_expiry_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appbar"
+            android:text="This Job might not be available or removed"
+            android:gravity="center"
+            android:background="@color/warningred"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/vj_companylogo"
+            android:layout_below="@+id/vj_job_expiry_warning"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_height="150dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rv_companyinfo"
+            android:layout_below="@+id/vj_companylogo"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/vj_companyname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Amdocs"/>
+
+            <TextView
+                android:id="@+id/vj_jobprofile"
+                android:layout_below="@id/vj_companyname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textFontWeight="600"
+                android:paddingRight="40dp"
+                android:textColor="@color/deepgray"
+                android:text="Hiring Data Engineer"/>
+
+            <TextView
+                android:id="@+id/vj_joblocation"
+                android:layout_below="@id/vj_jobprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="40dp"
+                android:textSize="12.5dp"
+                android:textFontWeight="600"
+                android:textColor="@color/deepgray2"
+                android:text="Pune, India"/>
+
+            <ImageButton
+                android:id="@+id/vj_share"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/share"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/vj_body"
+            android:layout_below="@id/rv_companyinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/vj_div2"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rv_ctc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/label_ctc"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="CTC :"
+                            android:textColor="@color/purple_500"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/vj_ctc"
+                            android:layout_toRightOf="@id/label_ctc"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.5 LPA"
+                            android:textColor="@color/deepgray"
+                            android:textSize="15dp"
+                            android:textFontWeight="600"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rv_jobexpereince"
+                        android:layout_below="@+id/rv_ctc"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/label_jobexperience"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Job Expereince :"
+                            android:textColor="@color/purple_500"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/vj_jobexperience"
+                            android:layout_toRightOf="@id/label_jobexperience"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fresher"
+                            android:textColor="@color/deepgray"
+                            android:textSize="15dp"
+                            android:textFontWeight="600"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rv_drivelocation"
+                        android:layout_below="@+id/rv_jobexpereince"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/label_drivelocation"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Drive Location :"
+                            android:textColor="@color/purple_500"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/vj_drivelocation"
+                            android:layout_toRightOf="@id/label_drivelocation"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Online"
+                            android:textColor="@color/deepgray"
+                            android:textSize="15dp"
+                            android:textFontWeight="600"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rv_jobequalification"
+                        android:layout_below="@+id/rv_drivelocation"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/label_jobqualification"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Job Qualification :"
+                            android:textColor="@color/purple_500"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/vj_jobqualification"
+                            android:layout_toRightOf="@id/label_jobqualification"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bachelor/ Recent graduates."
+                            android:textColor="@color/deepgray"
+                            android:textSize="15dp"
+                            android:textFontWeight="600"
+                            />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/vj_div3"
+                    android:layout_below="@+id/vj_div2"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/label_jobdescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Job Description :"/>
+
+                    <TextView
+                        android:id="@+id/vj_jobdescription"
+                        android:layout_below="@+id/label_jobdescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15dp"
+                        android:lineSpacingExtra="10dp"
+                        android:textStyle="normal"
+                        android:textColor="@color/deepgray"
+                        android:text="@string/sample_jd"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/vj_div4"
+                    android:layout_below="@+id/vj_div3"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+
+                    <Button
+                        android:id="@+id/vj_applylink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="Apply Now"
+                        android:layout_centerInParent="true"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
